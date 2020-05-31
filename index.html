@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Pega o icon do hamburguer  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Link com CSS -->
+<link rel="stylesheet" href="estilo.css">
+  <title>Inicio</title>
+</head>
+<body>
+  
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="Links">
+    <a href="#">Inicio</a>
+    <a href="#">Sobre nós</a>
+    <a href="#">Contato</a>
+  </div>
+  <!-- Hamburger menu || icon pega do font awesome || função para abrir e fechar -->
+  <a href="javascript:void(0);" class="icon" onclick="abrir()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+  function abrir() {
+    // confere se o hamburguer esta aberto ou não
+    
+    // variavel que pega o div links
+  var x = document.getElementById("Links");
+  // checa nas chaves do div links. dentro de div#links tem style e dentro tem display
+  // se o display estiver bloqueado(o hamburguer ativado) ele coloca none pra tirar
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+}
+</script>
+
+</body>
+</html>
